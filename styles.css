@@ -1,0 +1,398 @@
+/*Home Page */
+body.home {
+  background: radial-gradient(circle at center, #356a4a 0%, #1f3b2c 100%);
+  color: #fff5e1;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.home-container {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.truco-logo.large {
+  width: 650px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.main-title {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 6px #000;
+  margin-top: 0;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.menu-buttons button,
+.menu-button {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #1b1b1b;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px #000;
+  transition: background 0.3s;
+}
+
+.menu-buttons button:hover,
+.menu-button:hover {
+  background-color: #ffc400;
+}
+
+/*Story Section Styling */
+.story-section {
+  background-color: #fdfaf0;
+  color: #1e1e1e;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 200px auto 50px;
+  text-align: left;
+  border-top: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.story-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.story-section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 80px;
+  padding: 20px;
+  gap: 30px;
+  color: #fff5e1;
+  background: linear-gradient(to right, #1f3b2c, #264d38);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.info-section .text-content {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.info-section .image-side {
+  flex: 1;
+  text-align: center;
+}
+
+.info-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.story-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.story-text {
+  max-width: 600px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 420px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card-back {
+  background-color: #264d38;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+/* How to play */
+
+body.how-to {
+  background: radial-gradient(circle at center, #254d34 0%, #1a3928 100%);
+  font-family: 'Georgia', serif;
+  color: #fff5e1;
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.how-to-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-to-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff5e1;
+  text-align: left;
+}
+
+.how-to-box h2 {
+  margin-top: 30px;
+  color: #ffe270;
+}
+
+.how-to-box p,
+.how-to-box ul,
+.how-to-box ol {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.how-to-box ul,
+.how-to-box ol {
+  padding-left: 20px;
+}
+
+.how-to-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 80vw; 
+  margin: 40px auto;
+  padding: 0 10px; 
+  flex-wrap: wrap;
+}
+
+.how-to-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.how-to-image img {
+  width: 100%;
+  max-width: 700px;
+  height: 35%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.how-to-box h1,
+.how-to-box h2 {
+  color: #ffe270;
+  text-align: left;
+}
+
+.how-to-box ul,
+.how-to-box ol,
+.how-to-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.media-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  width: 100%;
+}
+
+.media-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.media-wrapper iframe {
+  width: 100%;        
+  max-width: 800px;    
+  height: 450px;       
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.card-thumbnail {
+  max-width: 100px !important;
+  max-height: 140px !important;
+  object-fit: cover;       
+  margin-top: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  display: block;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 150px;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.back-home {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  background-color: #ffd700;
+  color: #1b1b1b;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.back-home:hover {
+  background-color: #ffc400;
+}
+
+.card-flip {
+  width: 120px;
+  height: 180px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-flip:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
