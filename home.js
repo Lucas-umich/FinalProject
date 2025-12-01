@@ -5,4 +5,3 @@ function goToGame() {
 function goToHowToPlay() {
   window.location.href = "how-to-play.html";
 }
-

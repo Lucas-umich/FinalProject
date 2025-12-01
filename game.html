@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrucoZone – Play</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="game">
+
+  <div class="game-menu">
+    <a href="index.html" class="menu-button">Home</a>
+    <a href="how-to-play.html" class="menu-button">How to Play</a>
+  </div>
+
+  <main class="game-container">
+    
+    <h1 class="main-heading">Truco: You vs Machine</h1>
+
+    <div class="scoreboard">
+      <p>Player: <span id="player-points">0</span></p>
+      <p>Machine: <span id="machine-points">0</span></p>
+    </div>
+
+    <h2>Machine's Cards</h2>
+    <div id="machine-cards" class="card-back-row"></div>
+
+    <div class="play-area">
+      <p id="status">Game has started. Your turn!</p>
+    </div>
+
+    <h2>Your Cards</h2>
+    <div id="player-cards" class="card-row"></div>
+
+    <div class="truco-panel">
+      <button onclick="playTruco()">Truco <span title="Challenge for 2 points">❔</span></button>
+      <button onclick="playRetruco()">+4 (Retruco) <span title="Raise to 4 points">❔</span></button>
+      <button onclick="playEnvido()">Envido <span title="Compare suit values">❔</span></button>
+      <button onclick="playFlor()">Flor <span title="Three cards of the same suit">❔</span></button>
+    </div>
+
+  </main>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
