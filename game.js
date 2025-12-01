@@ -1,53 +1,55 @@
 window.onload = () => {
-  const allCards = [
-    { name: '1 Basto', path: '../barajas de cartas/Basto/basto1.png', strength: 14 },
-    { name: '2 Basto', path: '../barajas de cartas/Basto/basto2.png', strength: 10 },
-    { name: '3 Basto', path: '../barajas de cartas/Basto/basto3.png', strength: 11 },
-    { name: '4 Basto', path: '../barajas de cartas/Basto/basto4.png', strength: 2 },
-    { name: '5 Basto', path: '../barajas de cartas/Basto/basto5.png', strength: 3 },
-    { name: '6 Basto', path: '../barajas de cartas/Basto/basto6.png', strength: 4 },
-    { name: '7 Basto', path: '../barajas de cartas/Basto/basto7.png', strength: 5 },
-    { name: '10 Basto', path: '../barajas de cartas/Basto/basto10.png', strength: 6 },
-    { name: '11 Basto', path: '../barajas de cartas/Basto/basto11.png', strength: 7 },
-    { name: '12 Basto', path: '../barajas de cartas/Basto/basto12.png', strength: 8 },
+const allCards = [
+  // BASTO
+  { name: '1 Basto', path: './barajas de cartas/Basto/basto1.png', strength: 14 },
+  { name: '2 Basto', path: './barajas de cartas/Basto/basto2.png', strength: 10 },
+  { name: '3 Basto', path: './barajas de cartas/Basto/basto3.png', strength: 11 },
+  { name: '4 Basto', path: './barajas de cartas/Basto/basto4.png', strength: 2 },
+  { name: '5 Basto', path: './barajas de cartas/Basto/basto5.png', strength: 3 },
+  { name: '6 Basto', path: './barajas de cartas/Basto/basto6.png', strength: 4 },
+  { name: '7 Basto', path: './barajas de cartas/Basto/basto7.png', strength: 13 },
+  { name: '10 Basto', path: './barajas de cartas/Basto/basto10.png', strength: 6 },
+  { name: '11 Basto', path: './barajas de cartas/Basto/basto11.png', strength: 7 },
+  { name: '12 Basto', path: './barajas de cartas/Basto/basto12.png', strength: 8 },
 
-    { name: '1 copas', path: '../barajas de cartas/copas/copas1.png', strength: 9 },
-    { name: '2 copas', path: '../barajas de cartas/copas/copas2.png', strength: 10 },
-    { name: '3 copas', path: '../barajas de cartas/copas/copas3.png', strength: 11 },
-    { name: '4 copas', path: '../barajas de cartas/copas/copas4.png', strength: 2 },
-    { name: '5 copas', path: '../barajas de cartas/copas/copas5.png', strength: 3 },
-    { name: '6 copas', path: '../barajas de cartas/copas/copas6.png', strength: 4 },
-    { name: '7 copas', path: '../barajas de cartas/copas/copas7.png', strength: 5 },
-    { name: '10 copas', path: '../barajas de cartas/copas/copas10.png', strength: 6 },
-    { name: '11 copas', path: '../barajas de cartas/copas/copas11.png', strength: 7 },
-    { name: '12 copas', path: '../barajas de cartas/copas/copas12.png', strength: 8 },
+  // COPAS 
+  { name: '1 copas', path: './barajas de cartas/Copas/copas1.png', strength: 9 },
+  { name: '2 copas', path: './barajas de cartas/Copas/copas2.png', strength: 10 },
+  { name: '3 copas', path: './barajas de cartas/Copas/copas3.png', strength: 11 },
+  { name: '4 copas', path: './barajas de cartas/Copas/copas4.png', strength: 2 },
+  { name: '5 copas', path: './barajas de cartas/Copas/copas5.png', strength: 3 },
+  { name: '6 copas', path: './barajas de cartas/Copas/copas6.png', strength: 4 },
+  { name: '7 copas', path: './barajas de cartas/Copas/copas7.png', strength: 5 },
+  { name: '10 copas', path: './barajas de cartas/Copas/copas10.png', strength: 6 },
+  { name: '11 copas', path: './barajas de cartas/Copas/copas11.png', strength: 7 },
+  { name: '12 copas', path: './barajas de cartas/Copas/copas12.png', strength: 8 },
 
-    { name: '1 espadas', path: 'barajas de cartas/espadas/espada1.png', strength: 15 },
-    { name: '2 espadas', path: 'barajas de cartas/espadas/espada2.png', strength: 10 },
-    { name: '3 espadas', path: 'barajas de cartas/espadas/espada3.png', strength: 11 },
-    { name: '4 espadas', path: 'barajas de cartas/espadas/espada4.png', strength: 2 },
-    { name: '5 espadas', path: 'barajas de cartas/espadas/espada5.png', strength: 3 },
-    { name: '6 espadas', path: 'barajas de cartas/espadas/espada6.png', strength: 4 },
-    { name: '7 espadas', path: 'barajas de cartas/espadas/espada7.png', strength: 13 },
-    { name: '10 espadas', path: 'barajas de cartas/espadas/espada10.png', strength: 6 },
-    { name: '11 espadas', path: 'barajas de cartas/espadas/espada11.png', strength: 7 },
-    { name: '12 espadas', path: 'barajas de cartas/espadas/espada12.png', strength: 8 },
+  // ESPADAS  
+  { name: '1 espadas', path: './barajas de cartas/espadas/espada1.png', strength: 15 },
+  { name: '2 espadas', path: './barajas de cartas/espadas/espada2.png', strength: 10 },
+  { name: '3 espadas', path: './barajas de cartas/espadas/espada3.png', strength: 11 },
+  { name: '4 espadas', path: './barajas de cartas/espadas/espada4.png', strength: 2 },
+  { name: '5 espadas', path: './barajas de cartas/espadas/espada5.png', strength: 3 },
+  { name: '6 espadas', path: './barajas de cartas/espadas/espada6.png', strength: 4 },
+  { name: '7 espadas', path: './barajas de cartas/espadas/espada7.png', strength: 13 },
+  { name: '10 espadas', path: './barajas de cartas/espadas/espada10.png', strength: 6 },
+  { name: '11 espadas', path: './barajas de cartas/espadas/espada11.png', strength: 7 },
+  { name: '12 espadas', path: './barajas de cartas/espadas/espada12.png', strength: 8 },
 
+  // ORO
+  { name: '1 oro', path: './barajas de cartas/oro/oro1.png', strength: 9 },
+  { name: '2 oro', path: './barajas de cartas/oro/oro2.png', strength: 10 },
+  { name: '3 oro', path: './barajas de cartas/oro/oro3.png', strength: 11 },
+  { name: '4 oro', path: './barajas de cartas/oro/oro4.png', strength: 2 },
+  { name: '5 oro', path: './barajas de cartas/oro/oro5.png', strength: 3 },
+  { name: '6 oro', path: './barajas de cartas/oro/oro6.png', strength: 4 },
+  { name: '7 oro', path: './barajas de cartas/oro/oro7.png', strength: 12 },
+  { name: '10 oro', path: './barajas de cartas/oro/oro10.png', strength: 6 },
+  { name: '11 oro', path: './barajas de cartas/oro/oro11.png', strength: 7 },
+  { name: '12 oro', path: './barajas de cartas/oro/oro12.png', strength: 8 }
+];
 
-    { name: '1 oro', path: '../barajas de cartas/oro/oro1.png', strength: 9 },
-    { name: '2 oro', path: '../barajas de cartas/oro/oro2.png', strength: 10 },
-    { name: '3 oro', path: '../barajas de cartas/oro/oro3.png', strength: 11 },
-    { name: '4 oro', path: '../barajas de cartas/oro/oro4.png', strength: 2 },
-    { name: '5 oro', path: '../barajas de cartas/oro/oro5.png', strength: 3 },
-    { name: '6 oro', path: '../barajas de cartas/oro/oro6.png', strength: 4 },
-    { name: '7 oro', path: '../barajas de cartas/oro/oro7.png', strength: 12 },
-    { name: '10 oro', path: '../barajas de cartas/oro/oro10.png', strength: 6 },
-    { name: '11 oro', path: '../barajas de cartas/oro/oro11.png', strength: 7 },
-    { name: '12 oro', path: '../barajas de cartas/oro/oro12.png', strength: 8 },
-  ];
-
-const backImage = '../barajas de cartas/parte de atras.png';
-
+const backImage = './barajas de cartas/parte de atras.png';
 
 const playerCardsDiv = document.getElementById('player-cards');
 const machineCardsDiv = document.getElementById('machine-cards');
